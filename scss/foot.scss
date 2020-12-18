@@ -1,0 +1,140 @@
+@charset "utf-8";
+a,
+em,
+p,
+span {
+    user-select: none;
+}
+
+// 底部图标 
+a,
+button {
+    cursor: pointer;
+}
+
+.vanclFoot {
+    width: 1200px;
+    margin: 50px auto;
+    height: 282px;
+    padding: 0px 40px 0px;
+    border: 1px solid #e0e0e1;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 25px;
+    .vanclCustomer {
+        margin: 33px 0px 25px;
+        li {
+            text-align: center;
+            float: left;
+            width: 370px;
+            height: 138px;
+            border-right: 1px solid #e0e0e1;
+            p {
+                text-align: center;
+                font-size: 14px;
+                color: #727171;
+                line-height: 26px;
+                img {
+                    margin: 0px auto 30px;
+                }
+            }
+            .onlineTime {
+                margin: 0px auto;
+                width: 156px;
+                height: 32px;
+                text-align: center;
+                line-height: 32px;
+                font-size: 14px;
+                background: #b81c22;
+                color: #ffffff;
+            }
+        }
+        .twocode {
+            border-right: 0;
+            p {
+                img {
+                    width: 104px;
+                    height: 104px;
+                    margin-bottom: 10px;
+                }
+                em {
+                    color: #a10000;
+                }
+            }
+        }
+    }
+    .vanclOthers {
+        padding: 17px 0px 14px;
+        background: #f8f8f8;
+        width: 100%;
+        li {
+            cursor: pointer;
+            float: left;
+            padding: 0px 65px;
+            line-height: 26px;
+            border-right: 1px solid #dadadb;
+            text-align: center;
+            margin-right: 0px;
+            a {
+                font-size: 12px;
+            }
+        }
+        .none {
+            border-right: none
+        }
+    }
+}
+
+// 底部链接
+#footerArea {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    .footBottom {
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        border-top: 1px solid #3e3a39;
+        .footBottomTab {
+            width: 1200px;
+            margin: 10px auto 30px;
+            p {
+                line-height: 25px;
+                color: #3e3a39;
+                font-family: "Microsoft YaHei";
+                a {
+                    &:hover {
+                        color: #a10000;
+                    }
+                }
+            }
+        }
+    }
+    .subFooter {
+        width: 980px;
+        margin: 0px auto;
+        text-align: center;
+        padding-bottom: 20px;
+        .costumeOrg {
+            background: url(../data/img/spritesbg.png) no-repeat scroll 0 -448px;
+            display: inline-block;
+            height: 45px;
+            width: 156px;
+        }
+        .vanclMsg {
+            background: url(../data/img/spritesbg.png) no-repeat scroll -98px -493px;
+            display: inline-block;
+            height: 50px;
+            width: 101px;
+            margin: 0 50px;
+            cursor: pointer;
+        }
+        .vanclqingNian {
+            background: url(../data/img/spritesbg.png) no-repeat scroll -0px -493px;
+            display: inline-block;
+            height: 50px;
+            width: 42px;
+            cursor: pointer;
+        }
+    }
+}

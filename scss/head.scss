@@ -1,0 +1,362 @@
+@charset "utf-8";
+a,
+em,
+p,
+span {
+    user-select: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+#top {
+    width: 100%;
+    height: 32px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    color: #808080;
+    //顶部链接
+    #headTopArea {
+        width: 1200px;
+        margin: 0 auto;
+        line-height: 32px;
+        font-size: 12px;
+        //右边图标
+        .headerTopRight {
+            float: right;
+            line-height: 32px;
+            #vanclCustomer {
+                float: left;
+                margin: 0 10px;
+                .mapDropTitle {
+                    display: block;
+                    background: url(../data/img/notice.png) no-repeat 0px 5px;
+                    padding-left: 26px;
+                    text-align: left;
+                    &:hover {
+                        color: #a10000;
+                    }
+                }
+            }
+            //微博微信
+            .payattention {
+                height: 32px;
+                float: right;
+                margin: 5px;
+                .vweixinbox {
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    span {
+                        display: block;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../data/img/w1.jpg) no-repeat left 3px;
+                    }
+                    .vweixinTip {
+                        position: absolute;
+                        width: 148px;
+                        height: 169px;
+                        right: 0px;
+                        top: 30px;
+                        border: 1px solid #e5e5e5;
+                        background: url(../data/img/weixin.png) no-repeat;
+                        overflow: hidden;
+                        display: none;
+                        cursor: pointer;
+                        z-index: 10000;
+                    }
+                    &:hover {
+                        .vweixinTip {
+                            display: block;
+                        }
+                    }
+                }
+                .vanclweibo {
+                    display: inline-block;
+                    width: 20px;
+                    height: 25px;
+                    background: url(../data/img/w2.jpg) no-repeat left 3px;
+                }
+            }
+        }
+        //左边链接
+        .headerTopLeft {
+            float: right;
+            b {
+                font-weight: normal;
+                color: #000;
+            }
+            a {
+                margin: 0 5px;
+                font-weight: normal;
+            }
+            .order:hover {
+                color: #a10000;
+            }
+        }
+    }
+}
+
+#logoArea {
+    width: 1200px;
+    margin: 20px auto;
+    // 购物车
+    #shopCar {
+        float: right;
+        border: 1px solid #c1383e;
+        position: relative;
+        .carLogo {
+            width: 105px;
+            height: 27px;
+            background: url(../data/img/spritesbg1.png) no-repeat scroll -154px 0px;
+            z-index: 10;
+            padding-left: 30px;
+            a {
+                line-height: 27px;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            .carLogo {
+                background: url(../data/img/spritesbg1.png) no-repeat scroll -154px -30px;
+                z-index: 1000;
+                a {
+                    color: #c1383e;
+                }
+            }
+            b {
+                width: 104px;
+                height: 1px;
+                z-index: 1000;
+                background-color: #fff;
+                position: absolute;
+                right: 0px;
+                top: 27px;
+            }
+            .shopDropList {
+                display: block;
+            }
+        }
+        .shopDropList {
+            font-size: 12px;
+            color: #c9caca;
+            padding: 15px;
+            position: absolute;
+            right: -1px;
+            width: 315px;
+            background-color: #fff;
+            border: 1px solid #c1383e;
+            display: none;
+            z-index: 15;
+            .SCtotalpageBottom {
+                .msg {
+                    width: 100%;
+                    border-bottom: 1px solid #808080;
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    img {
+                        float: left;
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 20px;
+                    }
+                    div {
+                        float: left;
+                        margin-bottom: 10px;
+                        a {
+                            display: block;
+                            width: 180px;
+                            padding-right: 50px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            &:hover {
+                                color: #a10000;
+                            }
+                        }
+                        p {
+                            color: #a10000;
+                        }
+                    }
+                    .del {
+                        float: right;
+                        background-color: #fff;
+                        color: #c1383e;
+                    }
+                }
+                .total {
+                    margin-top: 10px;
+                    font-size: 12px;
+                    div {
+                        float: left;
+                        a {
+                            color: #a10000;
+                        }
+                    }
+                    .toCar {
+                        padding: 0 5px;
+                        font-weight: normal;
+                        float: right;
+                        height: 30px;
+                        line-height: 30px;
+                        color: #fff;
+                        background-color: #a10000;
+                    }
+                }
+            }
+        }
+    }
+    // 搜索框
+    .search {
+        float: right;
+        height: 27px;
+        line-height: 27px;
+        input {
+            height: 27px;
+            line-height: 27px;
+            width: 249px;
+            padding: 0px 5px;
+            border: 1px solid #c9caca;
+            font-size: 12px;
+            float: left;
+        }
+        #searchBtn {
+            float: left;
+            width: 49px;
+            height: 28px;
+            border: none;
+            cursor: pointer;
+            background: url(../data/img/spritesbg1.png) no-repeat scroll -100px 0px;
+        }
+    }
+    // 热门搜索
+    .hotWord {
+        font-size: 12px;
+        color: #808080;
+        width: 405px;
+        float: right;
+        margin: 5px 0;
+        text-align: center;
+        a {
+            cursor: pointer;
+            margin: 0 5px;
+        }
+    }
+    //导航栏
+    #navList {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        position: relative;
+        // logo
+        h1 {
+            cursor: pointer;
+            float: left;
+            margin-right: 50px;
+            a {
+                display: block;
+                width: 185px;
+                height: 46px;
+                background: url(../data/img/logoIndex.png) no-repeat scroll;
+            }
+        }
+        .list {
+            z-index: 10;
+            position: absolute;
+            right: 0;
+            >li {
+                background-color: #fff;
+                margin-top: 20px;
+                width: 96px;
+                float: left;
+                text-align: center;
+                //a标签链接
+                >a {
+                    line-height: 14px;
+                    font-size: 14px;
+                    &:hover {
+                        color: #a10000;
+                    }
+                }
+                //li鼠标悬停时状态
+                &:hover {
+                    em {
+                        display: block;
+                        width: 100%;
+                        height: 5px;
+                        margin-top: 5px;
+                        background-color: #c1383e;
+                    }
+                }
+                span {
+                    display: block;
+                    float: right;
+                    height: 14px;
+                    width: 1px;
+                    margin-top: 5px;
+                    background-color: #808080;
+                }
+                .subNav {
+                    cursor: pointer;
+                    display: none;
+                    width: 100%;
+                    >li {
+                        margin-top: 15px;
+                        &:last-of-type {
+                            padding-bottom: 20px;
+                        }
+                        >a {
+                            line-height: 14px;
+                            font-size: 14px;
+                        }
+                        &:hover {
+                            >a {
+                                color: #a10000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 固定栏
+.BayWindow {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    z-index: 10;
+    height: 281px;
+    border: 1px solid #b81b22;
+    border-bottom: none;
+    background-color: #fff;
+    margin-bottom: 30px;
+    a {
+        display: block;
+        width: 73px;
+        height: 76px;
+        background: url(../data/img/baywindow.png) no-repeat -1px -1px;
+    }
+    .newPeople a {
+        background-position: -1px -1px;
+    }
+    .downApp a {
+        background-position: -1px -77px;
+    }
+    .online a {
+        background-position: -1px -154px;
+    }
+    .BlackTop a {
+        background-position: -1px -228px;
+    }
+}

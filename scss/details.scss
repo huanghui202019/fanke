@@ -1,0 +1,580 @@
+a,
+em,
+p,
+span {
+    user-select: none;
+}
+
+.BayWindow {
+    display: none;
+}
+
+#content {
+    a,
+    button {
+        cursor: pointer;
+    }
+    //链接
+    .lj {
+        width: 1200px;
+        margin: 0 auto;
+        color: #000;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        a {
+            color: #000;
+            &:hover {
+                color: #a10000;
+            }
+        }
+        b {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        span {
+            margin: 0 10px;
+        }
+    }
+    //商品名
+    .title {
+        width: 1200px;
+        margin: 0 auto;
+        height: 45px;
+        border-bottom: 1px solid #e5e6e6;
+        font-size: 12px;
+        .goodsName {
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 45px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .btn {
+            float: right;
+            height: 45px;
+            a {
+                display: inline-block;
+                padding: 0px 15px 0px 0px;
+                line-height: 45px;
+                font-size: 14px;
+                margin: 0 10px;
+                color: #808080;
+            }
+            .car {
+                color: #ffffff;
+                width: 168px;
+                margin-right: 10px;
+                height: 33px;
+                background: url(../data/img/spritesbg1.png) no-repeat scroll -147px -285px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+    .st {
+        background-color: #fff;
+        width: 100%;
+        display: none;
+        overflow: hidden;
+    }
+    // 中间内容
+    .center {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+        border-bottom: 1px solid #B4B4B4;
+        //放大镜
+        .box {
+            float: left;
+            margin-right: 70px;
+            flex-direction: column;
+            position: relative;
+            //放大镜
+            .show {
+                float: left;
+                width: 420px;
+                height: 420px;
+                border: 1px solid #333;
+                position: relative;
+                text-align: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                //遮罩层
+                .mask {
+                    width: 200px;
+                    height: 200px;
+                    background-color: yellow;
+                    opacity: .4;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    display: none;
+                }
+            }
+            //列表
+            .list {
+                width: 100px;
+                float: left;
+                text-align: center;
+                padding: 20px;
+                p {
+                    width: 60px;
+                    height: 60px;
+                    border: 2px solid #333;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                p.active {
+                    border-color: red;
+                }
+            }
+            .enlarge {
+                /* 容器 与背景图的比例为 1 ：2 */
+                width: 500px;
+                height: 500px;
+                z-index: 1000;
+                position: absolute;
+                top: -25px;
+                left: 550px;
+                background-size: 750px 1000px;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                border: 1px solid #ccc;
+                display: none;
+            }
+        }
+        //内容
+        .nr {
+            float: left;
+            font-size: 12px;
+            .tehuiMoney {
+                margin-bottom: 10px;
+                line-height: 26px;
+                display: block;
+                color: #A10000;
+                font-size: 12px;
+                strong {
+                    font-size: 24px;
+                }
+                .afterChargePrice {
+                    line-height: 26px;
+                    color: #A10000;
+                    font-size: 12px;
+                    font-weight: bolder;
+                    margin-left: 10px;
+                }
+            }
+            #czwenan {
+                display: inline-block;
+                line-height: 10px;
+                color: #fff;
+                background: #b81c22;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            //选中颜色
+            .danpinColorSelect {
+                color: #666666;
+                .danpinColorTitle {
+                    line-height: 18px;
+                    float: left;
+                }
+                .selColor {
+                    width: 525px;
+                    float: left;
+                    li {
+                        cursor: pointer;
+                        border: 1px solid #B4B4B4;
+                        float: left;
+                        height: 40px;
+                        margin: 0px 8px 8px 0px;
+                        width: 95px;
+                        position: relative;
+                        .colorBlock {
+                            height: 38px;
+                            margin: 1px auto 0;
+                            width: 93px;
+                            p {
+                                padding-left: 45px;
+                            }
+                            .SpriteColors {
+                                display: block;
+                                float: left;
+                                width: 35px;
+                                height: 35px;
+                                background: url(../data/img/img1.jpg) no-repeat;
+                                background-size: 100% 100%;
+                            }
+                        }
+                        .colorHoverok {
+                            display: none;
+                            width: 14px;
+                            height: 13px;
+                            background: url(../data/img/sprite0725.png) no-repeat scroll;
+                            background-position: -1151px 0;
+                            position: absolute;
+                            right: 1px;
+                            bottom: 1px;
+                        }
+                        &:hover {
+                            border: 1px solid #a10000;
+                        }
+                    }
+                    .isSelect {
+                        border: 2px solid #a10000;
+                        .colorHoverok {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            //选择尺码
+            .size {
+                margin-bottom: 15px;
+                margin-top: 12px;
+                .selSizeArea {
+                    font-size: 12px;
+                    .danpinColorTitle {
+                        float: left;
+                        color: #666666;
+                        line-height: 22px;
+                        padding-bottom: 10px;
+                    }
+                    .selSize {
+                        width: 335px;
+                        float: left;
+                        li {
+                            float: left;
+                            background: #FFFFFF;
+                            border: 1px solid #C8C8C8;
+                            color: #333333;
+                            cursor: pointer;
+                            line-height: 22px;
+                            margin-right: 5px;
+                            margin-bottom: 5px;
+                            text-align: center;
+                            position: relative;
+                            p {
+                                height: 22px;
+                                background: #fff;
+                                padding: 0 9px;
+                            }
+                            span {
+                                display: none;
+                                width: 14px;
+                                height: 13px;
+                                background: url(../data/img/sprite0725.png) no-repeat scroll;
+                                background-position: -1151px 0;
+                                position: absolute;
+                                bottom: 1px;
+                                right: 1px;
+                            }
+                            &:hover {
+                                border: 1px solid #a10000;
+                            }
+                        }
+                        .active {
+                            border: 2px solid #a10000;
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                //选择提示框
+                .danpin_xuanzeGMm {
+                    display: none;
+                    border: 1px solid #CC9998;
+                    width: 170px;
+                    height: 20px;
+                    margin-left: 36px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #999999;
+                    clear: both;
+                    margin-bottom: 5px;
+                    color: #a10000;
+                    span {
+                        height: 16px;
+                        display: block;
+                        width: 16px;
+                        background-image: url(../data/img/sprite0725.png);
+                        background-color: transparent;
+                        background-repeat: no-repeat;
+                        background-position: -1911px 0pt;
+                        margin: 2px;
+                        float: left;
+                    }
+                    .seleSize {
+                        display: block;
+                    }
+                }
+                .seleSize {
+                    display: block;
+                }
+            }
+            //数量
+            .goodsNum {
+                margin-bottom: 15px;
+                .danpinColorTitle {
+                    float: left;
+                    color: #666666;
+                    line-height: 18px;
+                    padding-bottom: 10px;
+                }
+                .danpinnumSelect {
+                    float: left;
+                    select {
+                        height: 20px;
+                        line-height: 20px;
+                        width: 53px;
+                    }
+                    .LastNum {
+                        color: #a10000;
+                        margin-left: 10px;
+                        display: none;
+                    }
+                }
+            }
+            // 选中
+            .AreaItotal {
+                padding-bottom: 15px;
+                font-size: 12px;
+                .danpinColorTitle {
+                    float: left;
+                    color: #666666;
+                    line-height: 22px;
+                    padding-bottom: 10px;
+                }
+                .goodsAdd {
+                    height: 22px;
+                    float: left;
+                    p {
+                        float: left;
+                        display: block;
+                        height: 22px;
+                        line-height: 22px;
+                        color: #666666;
+                        font-weight: bold;
+                        padding-right: 10px;
+                    }
+                    .NowHasGoods {
+                        color: #a10000;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            //购买按钮
+            .shoppingNews {
+                margin-bottom: 15px;
+                #nowbuy {
+                    background: #F7ABAF;
+                    width: 166px;
+                    height: 31px;
+                    display: block;
+                    float: left;
+                    margin-right: 13px;
+                    color: #a10000;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 31px;
+                    border: solid 1px rgb(183, 27, 33);
+                }
+                #addCar {
+                    width: 168px;
+                    height: 33px;
+                    background: url(../data/img/spritesbg1.png) no-repeat scroll -147px -285px;
+                    display: block;
+                    float: left;
+                }
+            }
+            //优惠活动
+            #promotion {
+                height: auto;
+                width: 400px;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #A20000;
+                h4 {
+                    height: 4px;
+                    line-height: 14px;
+                    margin-bottom: 6px;
+                    position: relative;
+                    font-weight: bold;
+                    border-bottom: 1px solid #a20000;
+                    span {
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        text-align: center;
+                        background: #ffffff;
+                        position: absolute;
+                        left: 167px;
+                        top: -4px;
+                        padding: 0 8px;
+                    }
+                }
+                ul {
+                    li {
+                        padding-left: 15px;
+                        line-height: 24px;
+                        color: #666666;
+                        background: none;
+                        padding: 0;
+                        span,
+                        a {
+                            display: block;
+                            float: left;
+                            height: 16px;
+                            background: #b81c22;
+                            margin: 4px 5px 0 0;
+                            color: #fff;
+                            line-height: 16px;
+                            text-align: center;
+                            padding: 0 5px;
+                        }
+                        a {
+                            margin-right: 0;
+                            margin-left: 0;
+                        }
+                        em:nth-of-type(1),
+                        em:nth-of-type(3) {
+                            margin: 4px 0 0 0px;
+                            display: block;
+                            width: 12px;
+                            height: 16px;
+                            float: left;
+                            background: url(../data/img/qleft.png) no-repeat left;
+                        }
+                        em:nth-of-type(2),
+                        em:nth-of-type(4) {
+                            margin: 4px 0 0 0;
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            float: left;
+                            background: url(../data/img/qright.png) no-repeat left;
+                        }
+                    }
+                }
+            }
+        }
+        //侧边框
+        .drawerWrapper {
+            position: fixed;
+            right: -264px;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            z-index: 9999;
+            // transition: right .3s ease-in-out 0s;
+            //小标
+            .drawerTabs {
+                position: absolute;
+                width: 35px;
+                left: -99px;
+                top: calc(50% - 35px);
+                height: 35px;
+                border-radius: 3px 0 0 3px;
+                background: #7a6e6e;
+                cursor: pointer;
+                text-align: center;
+                line-height: 35px;
+                img {
+                    width: 18px;
+                }
+                &:hover {
+                    background-color: #b81c22;
+                }
+            }
+            //框
+            .drawerPanel {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-left: 6px solid #7a6e6e;
+                width: 270px;
+                height: 100%;
+                background: #eceaea;
+                .panelHead {
+                    color: #5e5050;
+                    height: 40px;
+                    line-height: 40px;
+                    font: 16px/40px "微软雅黑";
+                    padding-left: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 10px;
+                        transition: transform .2s ease-out 0s;
+                        cursor: pointer;
+                        &:hover {
+                            transform: rotate(180deg)
+                        }
+                    }
+                }
+                .couponList {
+                    padding: 0 10px;
+                    width: 100%;
+                    font-size: 12px;
+                    .coupon {
+                        height: 103px;
+                        background: #fff;
+                        // display: flex;
+                        margin-bottom: 10px;
+                        // transition: all .2s ease-in-out;
+                        position: relative;
+                        padding: 10px;
+                        .action {
+                            display: block;
+                            height: 103px;
+                            text-align: center;
+                            padding: 20px 5px;
+                            width: 32px;
+                            background: #A10000;
+                            color: #fff;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+                        .amount {
+                            color: #A10000;
+                            margin-bottom: 10px;
+                            .val {
+                                font-size: 28px;
+                                font-weight: 700;
+                                margin: -5px 10 0 5px;
+                            }
+                        }
+                        .desc {
+                            font-size: 12px;
+                            color: #777777;
+                            margin-bottom: 5px;
+                        }
+                        .limit {
+                            color: #999;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#detail {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}

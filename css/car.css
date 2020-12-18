@@ -1,0 +1,290 @@
+a,
+em,
+p,
+span {
+  user-select: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+a:hover,
+button:hover {
+  color: #A10000;
+}
+
+#main {
+  width: 980px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#main #header {
+  border-bottom: 1px solid #7A7F89;
+  padding-top: 15px;
+}
+#main #header .logo {
+  float: left;
+  display: block;
+  width: 311px;
+  text-align: center;
+}
+#main #header .helpCenter {
+  float: right;
+  line-height: 50px;
+}
+#main #header .account {
+  float: right;
+  line-height: 50px;
+}
+#main #header .account p a {
+  color: #a10000;
+  padding: 0 5px;
+}
+#main #location {
+  background: url(../data/img/newProm.gif);
+  background-position: 0 0;
+  height: 28px;
+  width: 540px;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+}
+#main #location em {
+  color: #fff;
+}
+#main #location span {
+  color: #666;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  width: 170px;
+  padding-left: 75px;
+}
+#main #content {
+  margin-top: 10px;
+}
+#main #content #cartEmpty {
+  display: none;
+  color: Gray;
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+#main #content #cartEmpty a {
+  color: #A10000;
+  text-decoration: underline;
+}
+#main #content #car {
+  margin-top: 20px;
+}
+#main #content #car .cartTop {
+  background: url(../data/img/newpromotion.gif) no-repeat 0 0;
+  height: 30px;
+  padding-left: 45px;
+  width: 935px;
+  background-position: -460px 0;
+}
+#main #content #car .cartTop h2 {
+  line-height: 38px;
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#main #content #car .tip {
+  margin-top: 6px;
+  color: #656565;
+  line-height: 20px;
+}
+#main #content #car .tip span {
+  color: #a10000;
+}
+#main #content #car table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #DCDFE4;
+}
+#main #content #car table thead th {
+  border-bottom: 1px solid #B7B7B7;
+  height: 37px;
+  background: url(../data/img/carthd.png) repeat-x;
+}
+#main #content #car table thead .name {
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#main #content #car table tbody {
+  background: #fff;
+}
+#main #content #car table tbody tr {
+  width: 100%;
+}
+#main #content #car table tbody tr td {
+  padding: 10px 0;
+}
+#main #content #car table tbody tr td:nth-of-type(2) {
+  text-align: center;
+}
+#main #content #car table tbody tr td img {
+  width: 50px;
+  height: 50px;
+}
+#main #content #car table tbody tr td .modifyProductQty {
+  padding-left: 10px;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #7A7F89;
+}
+#main #content #car table tbody tr td .decrease,
+#main #content #car table tbody tr td .increase {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #7A7F89;
+}
+#main #content #car table tbody tr td .del {
+  display: block;
+  color: #999;
+  padding: 0 12px;
+}
+#main #content #car table tbody tr td .new {
+  display: none;
+}
+#main #content #car table tbody tr .name a {
+  display: block;
+  width: 150px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#main #content #car table tbody tr .size,
+#main #content #car table tbody tr .price,
+#main #content #car table tbody tr .qty,
+#main #content #car table tbody tr .discount,
+#main #content #car table tbody tr .subtotal,
+#main #content #car table tbody tr .operate,
+#main #content #car table tbody tr .sub {
+  width: 100px;
+  text-align: center;
+}
+#main #content #car table tbody tr .sub span {
+  display: none;
+  text-align: center;
+}
+#main #content #car table tbody tr:first-child, #main #content #car table tbody tr:last-child {
+  padding: 0;
+  background-color: #fff;
+}
+#main #content #car table tbody .selected {
+  background-color: #F8F8F8;
+}
+#main #content #car #barSummary {
+  margin: 20px 0;
+  padding: 12px 10px 0px 0;
+  background: none repeat scroll 0 0 #FFFEF5;
+  border: 1px solid #EBE5BB;
+  line-height: 25px;
+  width: 968px;
+  position: relative;
+  top: 0px;
+  z-index: 1;
+}
+#main #content #car #barSummary .bar {
+  padding: 14px 42px 0 13px;
+  text-align: left;
+}
+#main #content #car #barSummary .bar .allProductsCkb {
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+}
+#main #content #car #barSummary .bar a {
+  background: transparent;
+  border: 0 none;
+  color: #333;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#main #content #car #barSummary .bar span {
+  padding-left: 42px;
+}
+#main #content #car #barSummary .bar span em {
+  color: #a10000;
+  font-style: normal;
+  font-weight: bold;
+}
+#main #content #car #barSummary .summary {
+  float: left;
+  padding: 10px 10px 10px 13px;
+}
+#main #content #car #barSummary .summary span {
+  color: #a10000;
+}
+#main #content #car #barSummary .summary .amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+#main #content #car #barSummary .summary a {
+  display: inline-block;
+  color: #A10000;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+#main #content #car #barSummary .btnPanel {
+  padding: 0 0 15px 0;
+  float: right;
+}
+#main #content #car #barSummary .btnPanel .goBuy {
+  display: block;
+  margin-top: 10px;
+  float: left;
+  background: url(../data/img/newpromotion.gif) no-repeat 0 0;
+  background-position: -160px 0;
+  color: #666;
+  height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+  text-align: center;
+  width: 122px;
+}
+#main #content #car #barSummary .btnPanel .checkout {
+  display: block;
+  float: left;
+  background: url(../data/img/newpromotion.gif) no-repeat 0 0;
+  background-position: 0 0;
+  color: #fff;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 10px;
+  width: 160px;
+  padding-left: 50px;
+}
+#main #content #car #barSummary .suball {
+  display: none;
+  margin-left: 20px;
+}
+#main #content #car #barSummary .suball a {
+  color: #A10000;
+  font-weight: bold;
+}
+#main #footer {
+  color: #999;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#main #footer p {
+  margin-bottom: 20px;
+}
+#main #footer p a,
+#main #footer p span {
+  margin-right: 20px;
+}

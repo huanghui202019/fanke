@@ -1,0 +1,307 @@
+a,
+em,
+p,
+span {
+    user-select: none;
+}
+
+a,
+button {
+    cursor: pointer;
+    &:hover {
+        color: #A10000;
+    }
+}
+
+#main {
+    width: 980px;
+    margin: 0 auto;
+    font-size: 12px;
+    // 头部
+    #header {
+        border-bottom: 1px solid #7A7F89;
+        padding-top: 15px;
+        .logo {
+            float: left;
+            display: block;
+            width: 311px;
+            text-align: center;
+        }
+        .helpCenter {
+            float: right;
+            line-height: 50px;
+        }
+        .account {
+            float: right;
+            line-height: 50px;
+            p {
+                a {
+                    color: #a10000;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    // 链接
+    #location {
+        background: url(../data/img/newProm.gif);
+        background-position: 0 0;
+        height: 28px;
+        width: 540px;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 28px;
+        text-align: center;
+        em {
+            color: #fff;
+        }
+        span {
+            color: #666;
+            display: inline-block;
+            font-weight: bold;
+            line-height: 28px;
+            text-align: center;
+            width: 170px;
+            padding-left: 75px;
+        }
+    }
+    // 中间内容
+    #content {
+        margin-top: 10px;
+        // 购物车为空
+        #cartEmpty {
+            display: none;
+            color: Gray;
+            font-size: 14px;
+            font-weight: bold;
+            height: 50px;
+            margin-top: 50px;
+            text-align: center;
+            a {
+                color: #A10000;
+                text-decoration: underline;
+            }
+        }
+        //购物车内容
+        #car {
+            margin-top: 20px;
+            //顶部
+            .cartTop {
+                background: url(../data/img/newpromotion.gif) no-repeat 0 0;
+                height: 30px;
+                padding-left: 45px;
+                width: 935px;
+                background-position: -460px 0;
+                h2 {
+                    line-height: 38px;
+                    margin-right: 8px;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            //提示
+            .tip {
+                margin-top: 6px;
+                color: #656565;
+                line-height: 20px;
+                span {
+                    color: #a10000;
+                }
+            }
+            // table
+            table {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 100%;
+                // text-align: center;
+                border: 1px solid #DCDFE4;
+                thead {
+                    th {
+                        border-bottom: 1px solid #B7B7B7;
+                        height: 37px;
+                        background: url(../data/img/carthd.png) repeat-x;
+                    }
+                    .name {
+                        width: 150px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+                tbody {
+                    background: #fff;
+                    tr {
+                        width: 100%;
+                        td {
+                            &:nth-of-type(2) {
+                                text-align: center;
+                            }
+                            padding: 10px 0;
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                            .modifyProductQty {
+                                padding-left: 10px;
+                                width: 30px;
+                                height: 20px;
+                                border: 1px solid #7A7F89;
+                            }
+                            .decrease,
+                            .increase {
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid #7A7F89;
+                            }
+                            .del {
+                                display: block;
+                                color: #999;
+                                padding: 0 12px;
+                            }
+                            .new {
+                                display: none;
+                            }
+                        }
+                        .name {
+                            a {
+                                display: block;
+                                width: 150px;
+                                text-align: left;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .size,
+                        .price,
+                        .qty,
+                        .discount,
+                        .subtotal,
+                        .operate,
+                        .sub {
+                            width: 100px;
+                            text-align: center;
+                        }
+                        .sub span {
+                            display: none;
+                            text-align: center;
+                        }
+                        &:first-child,
+                        &:last-child {
+                            padding: 0;
+                            background-color: #fff;
+                        }
+                    }
+                    .selected {
+                        background-color: #F8F8F8;
+                    }
+                }
+            }
+            //结算
+            #barSummary {
+                margin: 20px 0;
+                padding: 12px 10px 0px 0;
+                background: none repeat scroll 0 0 #FFFEF5;
+                border: 1px solid #EBE5BB;
+                line-height: 25px;
+                width: 968px;
+                position: relative;
+                top: 0px;
+                z-index: 1;
+                .bar {
+                    padding: 14px 42px 0 13px;
+                    text-align: left;
+                    .allProductsCkb {
+                        margin-right: 10px;
+                        width: 13px;
+                        height: 13px;
+                    }
+                    a {
+                        background: transparent;
+                        border: 0 none;
+                        color: #333;
+                        cursor: pointer;
+                        margin-left: 20px;
+                    }
+                    span {
+                        padding-left: 42px;
+                        em {
+                            color: #a10000;
+                            font-style: normal;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .summary {
+                    float: left;
+                    padding: 10px 10px 10px 13px;
+                    span {
+                        color: #a10000;
+                    }
+                    .amount {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    a {
+                        display: inline-block;
+                        color: #A10000;
+                        margin-left: 10px;
+                        text-decoration: underline;
+                    }
+                }
+                .btnPanel {
+                    padding: 0 0 15px 0;
+                    float: right;
+                    .goBuy {
+                        display: block;
+                        margin-top: 10px;
+                        float: left;
+                        background: url(../data/img/newpromotion.gif) no-repeat 0 0;
+                        background-position: -160px 0;
+                        color: #666;
+                        height: 37px;
+                        line-height: 37px;
+                        font-size: 14px;
+                        text-align: center;
+                        width: 122px;
+                    }
+                    .checkout {
+                        display: block;
+                        float: left;
+                        background: url(../data/img/newpromotion.gif) no-repeat 0 0;
+                        background-position: 0 0;
+                        color: #fff;
+                        height: 50px;
+                        font-size: 20px;
+                        line-height: 50px;
+                        margin-left: 10px;
+                        width: 160px;
+                        padding-left: 50px;
+                    }
+                }
+                .suball {
+                    display: none;
+                    margin-left: 20px;
+                    a {
+                        color: #A10000;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    // 底部
+    #footer {
+        color: #999;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        p {
+            margin-bottom: 20px;
+            a,
+            span {
+                margin-right: 20px;
+            }
+        }
+    }
+}

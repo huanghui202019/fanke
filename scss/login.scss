@@ -1,0 +1,182 @@
+@charset "utf-8";
+a,
+button {
+    cursor: pointer;
+}
+
+#top {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    border-bottom: solid 1px #919191;
+    img {
+        cursor: pointer
+    }
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    #content_left {
+        float: left;
+        width: 50%;
+        // text-align: center;
+        img {
+            float: right;
+            width: 465px;
+            padding-top: 100px;
+        }
+    }
+    #content_right {
+        float: left;
+        width: 50%;
+        padding: 50px 100px 50px 100px;
+        p {
+            font-size: 12px;
+            input {
+                width: 100%;
+                height: 45px;
+                line-height: 45px;
+                border: 1px solid rgb(203, 203, 203);
+                margin: 10px 0;
+                padding-left: 10px;
+            }
+            label.error {
+                color: red;
+                display: block;
+                float: left;
+                text-align: center;
+            }
+            #agree {
+                width: 15px;
+                height: 15px;
+                line-height: 15px;
+            }
+            a {
+                color: #b81e20;
+                font-weight: bold;
+            }
+        }
+        h2 {
+            width: 100%;
+            font-size: 20px;
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 2px solid #b81e20;
+            color: #a2a2a2;
+            font-weight: bolder;
+            // float: left;
+            margin-bottom: 10px;
+            span {
+                float: right;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 0;
+                margin: 0;
+                a {
+                    color: #b81e20;
+                }
+            }
+        }
+        .code {
+            margin-top: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            position: relative;
+            label.error {
+                color: red;
+                display: block;
+                float: left;
+                text-align: center;
+            }
+            #code_input {
+                height: 45px;
+                line-height: 45px;
+                border: 1px solid rgb(203, 203, 203);
+                margin: 10px 0;
+                padding-left: 10px;
+                margin-top: 0;
+                width: 270px;
+                float: left;
+            }
+            #picyzm {
+                width: 120px;
+                height: 45px;
+                text-align: center;
+                background-color: #b52024;
+                position: absolute;
+                left: 280px;
+                top: 0;
+                #verifyCanvas {
+                    width: 120px;
+                    height: 45px;
+                }
+            }
+        }
+        #btnLogin {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            background: #9A9A9A;
+            color: #FFFFFF;
+            border: solid 1px #cbcbcb;
+            display: block;
+            margin: 10px 0 0 0;
+            font-weight: bolder;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}
+
+#bottom {
+    width: 1200px;
+    margin: 0 auto;
+    p {
+        text-align: center;
+        font-size: 12px;
+        color: #919191;
+        margin-bottom: 15px;
+    }
+    .subFooter {
+        text-align: center;
+        height: 50px;
+        a,
+        span {
+            margin: 0 15px;
+        }
+        // background-color: #b81e20;
+        .redLogo:link,
+        .redLogo:visited,
+        .redLogo:hover {
+            width: 113px;
+            height: 42px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat 0px -400px;
+        }
+        .costumeOrg {
+            width: 156px;
+            height: 45px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat 0px -448px;
+        }
+        .wsjyBzzx:link,
+        .wsjyBzzx:visited,
+        .wsjyBzzx:hover {
+            width: 96px;
+            height: 42px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat 0px -494px;
+        }
+        .vanclMsg:link,
+        .vanclMsg:visited,
+        .vanclMsg:hover {
+            width: 101px;
+            height: 42px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat -97px -494px;
+        }
+    }
+}

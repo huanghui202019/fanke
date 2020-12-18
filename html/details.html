@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/foot.css">
+
+    <script src="../js/utils.js"></script>
+    <script src="../data/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/details.css">
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="content">
+        <div class="lj"></div>
+        <div class="title clearfix">
+            <div class="goodsName"></div>
+            <div class="btn">
+                <a>产品描述</a>|
+                <a>评论</a>|
+                <a>提问</a>
+            </div>
+        </div>
+        <div class="title st clearfix">
+            <div class="goodsName"></div>
+            <div class="btn">
+                <a>产品描述</a>|
+                <a>评论</a>|
+                <a>提问</a>
+                <button class="car"></button>
+            </div>
+        </div>
+
+        <div class="center clearfix">
+            <!-- 图片 -->
+            <div class="box clearfix">
+                <!--  <div class="show">
+                <img src="./images/img1_430x430.jpg">
+                <div class="mask"></div>
+            </div>
+            <div class="list">
+                <p class="active">
+                    <img midelImg="./images/img1_430x430.jpg" bigImg="./images/img1_750x1000.jpg" src="./images/img1_60x60.jpg">
+                </p>
+                <p>
+                    <img midelImg="./images/img2_430x430.jpg" bigImg="./images/img2_750x1000.jpg" src="./images/img2_60x60.jpg">
+                </p>
+                <p>
+                    <img midelImg="./images/img3_430x430.jpg" bigImg="./images/img3_750x1000.jpg" src="./images/img3_60x60.jpg">
+                </p>
+                <p>
+                    <img midelImg="./images/img4_430x430.jpg" bigImg="./images/img4_750x1000.jpg" src="./images/img4_60x60.jpg">
+                </p>
+                <p>
+                    <img midelImg="./images/img5_430x430.jpg" bigImg="./images/img5_750x1000.jpg" src="./images/img5_60x60.jpg">
+                </p>
+            </div>
+            <div class="enlarge"></div> -->
+            </div>
+            <!-- 内容区 -->
+            <div class="nr">
+                <span class="tehuiMoney">
+                    
+                </span>
+                <a id="czwenan">充100返100，点击充值</a>
+                <!-- 颜色 -->
+                <div class="danpinColorSelect clearfix">
+                    <div class="danpinColorTitle">
+                        <p>颜色：</p>
+                    </div>
+                    <ul class="selColor clearfix">
+                        <li title="黑色">
+                            <a href="javascript:">
+                                <div class="colorBlock" name="False">
+                                    <span class="SpriteColors">&nbsp;</span>
+                                    <p>黑色</p>
+
+                                </div>
+                                <span class="colorHoverok"></span></a>
+                        </li>
+                        <li title="白色">
+                            <a href="javascript:">
+                                <div class="colorBlock" name="False">
+                                    <span class="SpriteColors">&nbsp;</span>
+                                    <p>白色</p>
+                                </div>
+                                <span class="colorHoverok"></span></a>
+                        </li>
+                        <li title="红色">
+                            <a href="javascript:">
+                                <div class="colorBlock" name="False">
+                                    <span class="SpriteColors">&nbsp;</span>
+                                    <p>红色</p>
+                                </div>
+                                <span class="colorHoverok"></span></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <!-- 尺码 -->
+                <div class="size clearfix">
+                    <div class="selSizeArea clearfix">
+                        <div class="danpinColorTitle">
+                            <p>尺码：</p>
+                        </div>
+                        <ul class="selSize clearfix">
+                            <li title="S">
+                                <p>S</p>
+                                <span></span>
+                            </li>
+                            <li title="M">
+                                <p>M</p>
+                                <span></span>
+                            </li>
+                            <li title="L">
+                                <p>L</p>
+                                <span></span>
+                            </li>
+                            <li title="XL">
+                                <p>XL</p>
+                                <span></span>
+                            </li>
+
+                            <li title="XXL">
+                                <p>XXL</p>
+                                <span></span>
+                            </li>
+                            <li title="均码">
+                                <p>均码</p>
+                                <span></span></li>
+                        </ul>
+                    </div>
+                    <!-- 提示框 -->
+                    <div class="danpin_xuanzeGMm">
+                        <span class="sprites"></span>
+                        <p>请选择您要购买的商品</p>
+                    </div>
+                </div>
+                <!-- 数量 -->
+                <div class="goodsNum clearfix">
+                    <div class="danpinColorTitle" style="line-height: 18px;">
+                        <p>数量：</p>
+                    </div>
+                    <div class="danpinnumSelect clearfix">
+                        <select id="selectedAmount">
+                            <option value="1">
+                                1</option>        
+                            <option value="2">
+                                2</option>
+                            <option value="3">
+                                3</option>
+                            <option value="4">
+                                4</option>
+                            <option value="5">
+                                5</option>
+                            <option value="6">
+                                6</option>
+                            <option value="7">
+                                7</option>
+                            <option value="8">
+                                8</option>
+                            <option value="9">
+                                9</option>
+                            <option value="10">
+                                10</option>
+                        </select>
+                        <span id="comeon" class="LastNum">余量有限</span> <span class="blank15"></span>
+                    </div>
+                </div>
+                <!-- 已选 -->
+                <div class="AreaItotal clearfix">
+                    <div class="danpinColorTitle">
+                        <p>已选：</p>
+                    </div>
+                    <div class="goodsAdd clearfix">
+                        <p class="SelectName"></p>
+                        <p class="SelectSize"></p>
+                        <p class="NowHasGoods">现在有货</p>
+                    </div>
+                </div>
+                <!-- 购买按钮 -->
+                <div class="shoppingNews clearfix">
+                    <button id="nowbuy">立即购买</button>
+                    <button id="addCar"></button>
+                </div>
+                <!-- 优惠内容 -->
+                <div id="promotion">
+                    <h4>
+                        <span>优惠提示</span></h4>
+                    <ul class="clearfix">
+                        <li class="clearfix"><span>免邮</span> 全场购物满199元免运费
+                        </li>
+                        <li class="clearfix"><span>m件n折</span> 2件7.5折
+                        </li>
+                        <li class="giftCard clearfix">
+                            <span>优惠券</span>
+                            <em></em><a>
+                             满200减20</a><em></em>
+                            <em></em><a>新人有礼</a><em></em>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <!-- 侧边框 -->
+            <div class="drawerWrapper">
+                <div class="drawerPanel">
+                    <div class="panelHead">
+                        <span>优惠券</span>
+                        <img class="closeWrapper" src="../data/img/close.png">
+                    </div>
+                    <div class="couponList">
+                        <div class="coupon">
+                            <div class="amount">
+                                <span class="unit">¥</span>
+                                <span class="val">20</span>
+                                <span class="zh-unit">券</span>
+                            </div>
+                            <div class="desc">满200减20</div>
+                            <div class="limit">有效期2020-12-16至2020-12-18</div>
+                            <a class="action">立即领取</a>
+                        </div>
+
+                        <div class="coupon ">
+                            <div class="amount">
+                                <span class="unit">¥</span>
+                                <span class="val">30</span>
+                                <span class="zh-unit">券</span>
+                            </div>
+                            <div class="desc">新人有礼</div>
+                            <div class="limit">有效期2020-12-01至2020-12-31</div>
+                            <a class="action"><span>立即领取</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 小标签 -->
+                <div class="drawerTabs">
+                    <img src="../data/img/coupon-l.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="detail">
+
+    </div>
+
+    <div id="foot"></div>
+    <script src="../js/details.js"></script>
+</body>
+
+</html>

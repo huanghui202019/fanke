@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/foot.css">
+
+    <script src="../js/utils.js"></script>
+    <script src="../data/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="../data/jquery/pagination.css">
+    <script src="../data/jquery/jquery.pagination.js"></script>
+    <link rel="stylesheet" href="../css/list.css">
+
+
+</head>
+
+<body>
+    <div id="head"></div>
+    <div id="content">
+        <!-- 位置 -->
+        <div class="breadnav clearfix">
+            <div class="locationdiv">
+                <span>当前位置：</span>
+                <a href="./list.html?classify='all'">所有分类</a>
+
+            </div>
+            <div class="tsmsg">找到<span class="searchKey"></span>相关商品<span class="searchNum"></span>款</div>
+        </div>
+        <!-- 分类 -->
+        <div class="selectarea">
+            <div class="typearea">
+            </div>
+        </div>
+
+        <div id="shuj">
+            <!-- 全部商品 -->
+            <div class="filterTabBar clearfix">
+                <a class="searchTabbar" href="./list.html?classify='all'">全部商品</a>
+                <!-- 分页 -->
+                <div class="pageBox clearfix"></div>
+            </div>
+
+            <!-- 排序与尺寸 -->
+            <div class="filterFormN5">
+                <!-- 排序 -->
+                <div class="filterForm clearfix">
+                    <ul class="searchCol clearfix">
+                        <li class="moren">
+                            <a title="按推荐由高到低">
+                                <em>默认</em> <span class="upTrendBottom active1">按推荐由高到低</span></a>
+                        </li>
+                        <li class="xiaoliang">
+                            <a title="按销量由高到低">
+                                <em>销量</em> <span class="upTrendBottom">按销量由高到低</span></a>
+                        </li>
+                        <li class="haoping">
+                            <a title="按评价从高到低">
+                                <em>好评</em> <span class="upTrendBottom">按评价从高到低</span></a>
+                        </li>
+                        <li class="zuixin">
+                            <a title="上架新品">
+                                <em>最新</em> <span class="BottomTrendUp">上架新品</span></a>
+                        </li>
+                        <li class="jiage" id="sortTypeMore">
+                            <a title="按价格从低到高">
+                                <em>价格</em>
+                                <span class="BottomTrendUp">按价格从低到高</span>
+                            </a>
+                            <span class="triggerMore">更多</span>
+                            <div class="dropdownList" id="sortTypeList">
+                                <p class="shengJ">
+                                    <a title="按价格从低到高">
+                                        <em>价格</em> <span class="BottomTrendUp">按价格从低到高</span></a>
+                                </p>
+                                <p class="jiangJ">
+                                    <a title="按价格从高到低">
+                                        <em>价格</em><span class="upTrendBottom">按价格从高到低</span></a>
+                                </p>
+                                <p>
+                                    <a title="按折扣从高到低">
+                                        <em>折扣</em><span class="upTrendBottom">按折扣从高到低</span></a>
+                                </p>
+                                <p>
+                                    <a title="按直降从高到低">
+                                        <em>直降</em><span class="upTrendBottom">默直降高到低</span></a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- 价格筛选 -->
+                    <div class="searchbarPrice">
+                        <div class="searchbarFoused" id="searchPriceButtonArea">
+                            <div class="searchbarInit clearfix">
+                                <input type="text" title="按价格区间筛选 最低价" value="" class="minPrice" class="FpriceText">
+                                <span class="Fline">-</span>
+                                <input type="text" title="按价格区间筛选 最低价" class="maxPrice FpriceText">
+                            </div>
+                            <div class="btn clearfix">
+                                <a id="clearPrice">清空</a>
+                                <button id="selectPrice">确定</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 合并同款 -->
+                    <div class="hbDpBox">
+                        <button>合并同款</button>
+                    </div>
+                </div>
+
+                <!-- 尺寸 -->
+                <ul class="sizeForm">
+                    <li value='X'><a href="javascript:">S</a></li>
+                    <li value='M'><a href="javascript:">M</a></li>
+                    <li value='L'><a href="javascript:">L</a></li>
+                    <li value='XL'><a href="javascript:">XL</a></li>
+                    <li value='XXL'><a href="javascript:">XXL</a></li>
+                    <li value='均码'><a href="javascript:">均码</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <!-- 商品 -->
+        <ul id="goodlist" class="clearfix">
+            <!-- <li class="scListArea">
+                <div class="pic">
+                    <a href="../html/details.html?goods_id='goods_id'" title="皮卡诺三用旅行包 6569 黑色">
+                        <img class="productPhoto" alt="皮卡诺三用旅行包 6569 黑色" src="../data/img/w1.jpg">
+                    </a>
+                    <div class="teshui">339</div>
+                </div>
+                <p>
+                    <a href="http://item.vancl.com/6388434.html" title="皮卡诺三用旅行包 6569 黑色">皮卡诺三用旅行包 6569 黑色</a>
+                </p>
+                <p class="Mprice"><span class="Sprice">售价￥<strong>458</strong></span></p>
+                <div class="bigImg">
+                    <img src="../data/img/w1.jpg" alt="">
+                    <p>皮卡诺三用旅行包 6569 黑色</p>
+                    <p>产品编号：</p>
+                    <div class="sj clearfix">
+                        <span>售价：￥</span>
+                        <div class="plun">
+                            <p>暂无评论</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+        <div id="pagBot"></div>
+    </div>
+    <div id="foot"></div>
+    <script src="../js/list.js"></script>
+</body>
+
+</html>

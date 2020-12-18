@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/register.css">
+
+    <script src="../js/utils.js"></script>
+    <script src="../data/jquery/jquery.min.js"></script>
+    <script src="../data/jquery/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <div id="top">
+        <a href="./index.html">
+            <img src="../data/img/logo.jpg" alt="凡客诚品" title="凡客诚品">
+        </a>
+    </div>
+
+    <div id="content" class="clearfix">
+        <div id="content_left">
+            <img src="../data/img/login.jpg">
+        </div>
+        <form id="content_right">
+            <h2>凡客Vancl登录
+                <span>没有账户免费 
+                    <a href="./login.html">注册</a>
+                </span>
+            </h2>
+            <ul class="clearfix">
+                <li class="active">普通登录</li>
+                <li>快速登录</li>
+            </ul>
+
+            <div>
+                <div id="nomal" class="in">
+                    <p>
+                        <input type="text" id="username" placeholder="请输入用户名" name="username">
+                    </p>
+                    <p>
+                        <input type="password" id="password" placeholder="请输入密码" name="password">
+                    </p>
+                    <p><a href="#">找回密码</a></p>
+                    <button class="btnLogin active">登录</button>
+                </div>
+
+                <div id="fast" class="in move">
+                    <p class="clearfix"><input type="text" placeholder="输入手机号" class="phoneNum">
+                        <button class="phoneBtn">获取短信验证码</button></p>
+                    <p class="clearfix">
+                        <input type="text" placeholder="验证码" class="code_input">
+                        <span id="code"></span>
+                        <span>看不起？换一张</span>
+                    </p>
+                    <p><input type="text" placeholder="请输入手机验证码" class="phoneCode"></p>
+                    <button class="btnLogin active">登录</button>
+
+                </div>
+            </div>
+
+            <div class="coop">
+                <p>使用合作网站账号登录凡客</p>
+                <p class="qkimg clearfix">
+                    <a href="/login/wxlogin.aspx?http://www.vancl.com/?http%3A%2F%2Fwww.vancl.com%2F" id="a_wxlogin" class="weixin">
+                    </a>
+                    <a class="xiaomi" onclick="openUrl('xiaomi')" href="javascript:void(0)"></a>
+                    <a href="javascript:void(0)" onclick="openUrl('alipay')" class="zhifubao"></a>
+                    <a class="qq" href="javascript:void(0)" onclick="openUrl('qq')"></a>
+                    <a class="qihu360" href="javascript:void(0)" onclick="openUrl('qihoo360')"></a>
+                    <a class="weibo" href="javascript:void(0)" onclick="openUrl('sinaweibo')"></a>
+
+                </p>
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+    <div id="bottom">
+        <p>Copyright 2007 - 2020 vancl.com All Rights Reserved京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+        <div class="subFooter">
+            <a rel="nofollow" href="https://search.szfw.org/cert/l/CX20111229001302001330" class="redLogo" target="_blank"></a>
+            <span class="costumeOrg"></span>
+            <a rel="nofollow" href="http://www.315online.com.cn/member/315090053.html" class="wsjyBzzx" target="_blank"></a>
+            <a rel="nofollow" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202010081900017" class="vanclMsg" target="_blank"></a>
+        </div>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+a,
+em,
+p,
+span {
+  user-select: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.vanclFoot {
+  width: 1200px;
+  margin: 50px auto;
+  height: 282px;
+  padding: 0px 40px 0px;
+  border: 1px solid #e0e0e1;
+  font-family: "Microsoft YaHei";
+  margin-bottom: 25px;
+}
+.vanclFoot .vanclCustomer {
+  margin: 33px 0px 25px;
+}
+.vanclFoot .vanclCustomer li {
+  text-align: center;
+  float: left;
+  width: 370px;
+  height: 138px;
+  border-right: 1px solid #e0e0e1;
+}
+.vanclFoot .vanclCustomer li p {
+  text-align: center;
+  font-size: 14px;
+  color: #727171;
+  line-height: 26px;
+}
+.vanclFoot .vanclCustomer li p img {
+  margin: 0px auto 30px;
+}
+.vanclFoot .vanclCustomer li .onlineTime {
+  margin: 0px auto;
+  width: 156px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 14px;
+  background: #b81c22;
+  color: #ffffff;
+}
+.vanclFoot .vanclCustomer .twocode {
+  border-right: 0;
+}
+.vanclFoot .vanclCustomer .twocode p img {
+  width: 104px;
+  height: 104px;
+  margin-bottom: 10px;
+}
+.vanclFoot .vanclCustomer .twocode p em {
+  color: #a10000;
+}
+.vanclFoot .vanclOthers {
+  padding: 17px 0px 14px;
+  background: #f8f8f8;
+  width: 100%;
+}
+.vanclFoot .vanclOthers li {
+  cursor: pointer;
+  float: left;
+  padding: 0px 65px;
+  line-height: 26px;
+  border-right: 1px solid #dadadb;
+  text-align: center;
+  margin-right: 0px;
+}
+.vanclFoot .vanclOthers li a {
+  font-size: 12px;
+}
+.vanclFoot .vanclOthers .none {
+  border-right: none;
+}
+
+#footerArea {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+}
+#footerArea .footBottom {
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  border-top: 1px solid #3e3a39;
+}
+#footerArea .footBottom .footBottomTab {
+  width: 1200px;
+  margin: 10px auto 30px;
+}
+#footerArea .footBottom .footBottomTab p {
+  line-height: 25px;
+  color: #3e3a39;
+  font-family: "Microsoft YaHei";
+}
+#footerArea .footBottom .footBottomTab p a:hover {
+  color: #a10000;
+}
+#footerArea .subFooter {
+  width: 980px;
+  margin: 0px auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#footerArea .subFooter .costumeOrg {
+  background: url(../data/img/spritesbg.png) no-repeat scroll 0 -448px;
+  display: inline-block;
+  height: 45px;
+  width: 156px;
+}
+#footerArea .subFooter .vanclMsg {
+  background: url(../data/img/spritesbg.png) no-repeat scroll -98px -493px;
+  display: inline-block;
+  height: 50px;
+  width: 101px;
+  margin: 0 50px;
+  cursor: pointer;
+}
+#footerArea .subFooter .vanclqingNian {
+  background: url(../data/img/spritesbg.png) no-repeat scroll 0px -493px;
+  display: inline-block;
+  height: 50px;
+  width: 42px;
+  cursor: pointer;
+}

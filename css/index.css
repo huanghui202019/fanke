@@ -1,0 +1,245 @@
+a,
+em,
+p,
+span {
+  user-select: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.swiper-container {
+  cursor: pointer;
+  width: 1200px;
+  height: 535px;
+  position: relative;
+  --swiper-theme-color: #a10000;
+}
+.swiper-container .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.swiper-container .swiper-pagination span {
+  width: 10px;
+  height: 10px;
+}
+
+#invest {
+  width: 1200px;
+  height: 58px;
+  margin: 50px auto;
+  background-image: url(../data/img/hjmd.jpg);
+}
+#invest .invest {
+  cursor: pointer;
+  display: block;
+  width: 85%;
+  margin: 5px 50px;
+  margin-right: 0;
+  height: 48px;
+  float: left;
+}
+#invest .receive {
+  cursor: pointer;
+  display: block;
+  width: 8%;
+  margin: 5px 5px;
+  height: 48px;
+  float: right;
+}
+
+#seckill {
+  width: 1200px;
+  height: 41px;
+  margin: 0 auto;
+  background: url(../data/img/msbg.jpg);
+}
+#seckill .more {
+  display: block;
+  float: right;
+  font-size: 12px;
+  cursor: pointer;
+}
+#seckill .more:hover {
+  color: #a10000;
+}
+#seckill .tip {
+  float: left;
+  line-height: 41px;
+  padding-left: 98px;
+  font-size: 14px;
+  color: #000;
+}
+#seckill .time {
+  padding-left: 192px;
+  padding-top: 9px;
+}
+#seckill .time span {
+  color: #fff;
+  margin: 3px;
+}
+
+#msGoods {
+  width: 1200px;
+  margin: 50px auto;
+}
+#msGoods li {
+  float: left;
+  width: 399px;
+  padding: 0 20px;
+  border-right: 1px solid #000;
+  font-size: 12px;
+}
+#msGoods li:last-of-type {
+  border-right: 0;
+}
+#msGoods li img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 15px;
+}
+#msGoods li .productname {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#msGoods li .sell {
+  margin-bottom: 10px;
+}
+#msGoods li .sell .process {
+  display: inline-block;
+  width: 136px;
+  height: 10px;
+  border: 1px solid #ea4141;
+  border-radius: 20px;
+  margin-right: 21px;
+  overflow: hidden;
+}
+#msGoods li .sell .process em {
+  display: block;
+  height: 100%;
+  background-color: #a10000;
+  border: 1px solid;
+  width: 50%;
+  border: 0;
+}
+#msGoods li .price {
+  height: 30px;
+}
+#msGoods li .price .oldprice {
+  color: #d3d3d3;
+  font-size: 14px;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+#msGoods li .price .saleprice {
+  color: #bb2b34;
+  font-size: 16px;
+}
+#msGoods li .price .afterdeposit {
+  font-size: 14px;
+  font-weight: normal;
+  float: right;
+  color: #D01236;
+}
+#msGoods li .buynow {
+  width: 88px;
+  height: 21px;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  margin-left: 135px;
+  background: #D01236;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+}
+
+#coupon {
+  width: 1200px;
+  margin: 0 auto;
+}
+#coupon li {
+  float: left;
+  height: 281px;
+}
+#coupon li:nth-of-type(1) {
+  width: 263px;
+}
+#coupon li:nth-of-type(2) {
+  width: 450px;
+  cursor: pointer;
+}
+#coupon li:nth-of-type(3) {
+  width: 487px;
+  cursor: pointer;
+}
+
+#recommend {
+  width: 1200px;
+  margin: 0 auto;
+}
+#recommend h2 {
+  text-align: center;
+  line-height: 50px;
+  padding: 30px 0px;
+  color: #9a9a9a;
+  font-size: 16px;
+}
+#recommend li {
+  float: left;
+  margin-right: 16px;
+  display: inline;
+}
+#recommend li a {
+  cursor: pointer;
+}
+#recommend li h3 {
+  padding: 20px 12px;
+  line-height: 28px;
+  border: 1px solid #e8e7ec;
+  border-top: 0px;
+  font-size: 14px;
+}
+#recommend li h3 span {
+  float: right;
+  color: #a10000;
+  font-family: Arial;
+  line-height: 24px;
+  font-size: 14px;
+}
+#recommend li h3 span em {
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+#recommend #preference .pic_two div:nth-of-type(2) {
+  margin-top: 10px;
+}
+#recommend #preference .shangzhuanglist_bot {
+  margin-top: 10px;
+}
+#recommend .otherlist ul {
+  margin-bottom: 30px;
+}
+#recommend .otherlist li {
+  width: 385px;
+  height: 275px;
+}
+#recommend .otherlist li img {
+  width: 100%;
+  height: 100%;
+}
+#recommend .otherlist li:nth-of-type(3) {
+  margin-right: 0;
+}

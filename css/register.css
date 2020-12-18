@@ -1,0 +1,262 @@
+a,
+button {
+  cursor: pointer;
+}
+
+#top {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  border-bottom: solid 1px #919191;
+}
+#top img {
+  cursor: pointer;
+}
+
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content #content_left {
+  float: left;
+  width: 50%;
+}
+#content #content_left img {
+  float: right;
+  width: 465px;
+  padding-top: 100px;
+}
+#content #content_right {
+  float: left;
+  width: 50%;
+  padding: 50px 100px 50px 100px;
+}
+#content #content_right h2 {
+  width: 100%;
+  font-size: 22px;
+  height: 35px;
+  line-height: 35px;
+  color: #a2a2a2;
+  font-weight: bolder;
+  float: left;
+  margin-bottom: 10px;
+}
+#content #content_right h2 span {
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+#content #content_right h2 span a {
+  color: #b81e20;
+}
+#content #content_right li {
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  text-align: center;
+  background: #f5f5f5;
+  color: #656565;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 14px;
+}
+#content #content_right .active {
+  background-color: #b52024;
+  color: white;
+  font-weight: bold;
+}
+#content #content_right p {
+  font-size: 14px;
+}
+#content #content_right p a {
+  color: #b81e20;
+  font-weight: bold;
+  margin-right: 40px;
+  float: right;
+}
+#content #content_right #nomal {
+  border: 1px solid #ccc;
+  border-bottom: 1px dotted #ccc;
+  width: 100%;
+  text-align: center;
+}
+#content #content_right #nomal p input {
+  width: 80%;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #cbcbcb;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+#content #content_right #nomal p label.error {
+  color: red;
+  display: block;
+  float: left;
+  text-align: center;
+  padding-left: 50px;
+}
+#content #content_right #nomal .btnLogin {
+  float: none;
+  width: 80%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  border: solid 1px #cbcbcb;
+  display: block;
+  margin: 20px 0 50px 40px;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 16px;
+}
+#content #content_right #fast {
+  border: 1px solid #ccc;
+  border-bottom: 1px dotted #ccc;
+  width: 100%;
+  text-align: center;
+}
+#content #content_right #fast p {
+  width: 80%;
+  margin: 10px 40px;
+}
+#content #content_right #fast p input {
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #cbcbcb;
+  padding-left: 10px;
+}
+#content #content_right #fast p .phoneNum {
+  width: 60%;
+  float: left;
+}
+#content #content_right #fast p .phoneBtn {
+  width: 35%;
+  float: right;
+  height: 45px;
+  line-height: 45px;
+}
+#content #content_right #fast p .code_input {
+  width: 35%;
+  float: left;
+}
+#content #content_right #fast p #code {
+  display: block;
+  width: 35%;
+  height: 45px;
+  float: left;
+  border: 1px solid #cbcbcb;
+}
+#content #content_right #fast p span {
+  float: left;
+  font-size: 12px;
+}
+#content #content_right #fast p .phoneCode {
+  width: 100%;
+}
+#content #content_right #fast .btnLogin {
+  float: none;
+  width: 80%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  border: solid 1px #cbcbcb;
+  display: block;
+  margin: 20px 0 50px 40px;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 16px;
+}
+#content #content_right .move {
+  display: none;
+}
+#content #content_right .coop {
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 10px 20px;
+}
+#content #content_right .coop p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a2a2a2;
+  margin: 10px 0;
+}
+#content #content_right .coop p a {
+  width: 33px;
+  height: 33px;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  background: url(../data/img/logos.jpg) no-repeat left center;
+}
+#content #content_right .coop .qkimg a.weixin {
+  background-position: 0px 0px;
+}
+#content #content_right .coop .qkimg a.xiaomi {
+  background-position: -147px 0px;
+}
+#content #content_right .coop .qkimg a.zhifubao {
+  background-position: -48px 0px;
+}
+#content #content_right .coop .qkimg a.qq {
+  background-position: -189px 0px;
+}
+#content #content_right .coop .qkimg a.qihu360 {
+  background-position: -228px 0px;
+}
+#content #content_right .coop .qkimg a.weibo {
+  background-position: -93px 0px;
+  width: 36px;
+}
+
+#bottom {
+  width: 1200px;
+  margin: 0 auto;
+}
+#bottom p {
+  text-align: center;
+  font-size: 12px;
+  color: #919191;
+  margin-bottom: 15px;
+}
+#bottom .subFooter {
+  text-align: center;
+  height: 50px;
+}
+#bottom .subFooter a,
+#bottom .subFooter span {
+  margin: 0 15px;
+}
+#bottom .subFooter .redLogo:link,
+#bottom .subFooter .redLogo:visited,
+#bottom .subFooter .redLogo:hover {
+  width: 113px;
+  height: 42px;
+  display: inline-block;
+  background: url(../data/img/spritesbg.png) no-repeat 0px -400px;
+}
+#bottom .subFooter .costumeOrg {
+  width: 156px;
+  height: 45px;
+  display: inline-block;
+  background: url(../data/img/spritesbg.png) no-repeat 0px -448px;
+}
+#bottom .subFooter .wsjyBzzx:link,
+#bottom .subFooter .wsjyBzzx:visited,
+#bottom .subFooter .wsjyBzzx:hover {
+  width: 96px;
+  height: 42px;
+  display: inline-block;
+  background: url(../data/img/spritesbg.png) no-repeat 0px -494px;
+}
+#bottom .subFooter .vanclMsg:link,
+#bottom .subFooter .vanclMsg:visited,
+#bottom .subFooter .vanclMsg:hover {
+  width: 101px;
+  height: 42px;
+  display: inline-block;
+  background: url(../data/img/spritesbg.png) no-repeat -97px -494px;
+}

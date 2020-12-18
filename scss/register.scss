@@ -1,0 +1,266 @@
+@charset "utf-8";
+a,
+button {
+    cursor: pointer;
+}
+
+#top {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    border-bottom: solid 1px #919191;
+    img {
+        cursor: pointer
+    }
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    #content_left {
+        float: left;
+        width: 50%;
+        img {
+            float: right;
+            width: 465px;
+            padding-top: 100px;
+        }
+    }
+    #content_right {
+        float: left;
+        width: 50%;
+        padding: 50px 100px 50px 100px;
+        h2 {
+            width: 100%;
+            font-size: 22px;
+            height: 35px;
+            line-height: 35px;
+            color: #a2a2a2;
+            font-weight: bolder;
+            float: left;
+            margin-bottom: 10px;
+            span {
+                float: right;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 0;
+                margin: 0;
+                a {
+                    color: #b81e20;
+                }
+            }
+        }
+        li {
+            width: 50%;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            text-align: center;
+            background: #f5f5f5;
+            color: #656565;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .active {
+            background-color: #b52024;
+            color: white;
+            font-weight: bold;
+        }
+        p {
+            font-size: 14px;
+            a {
+                color: #b81e20;
+                font-weight: bold;
+                margin-right: 40px;
+                float: right;
+            }
+        }
+        #nomal {
+            border: 1px solid #ccc;
+            border-bottom: 1px dotted #ccc;
+            width: 100%;
+            text-align: center;
+            p {
+                input {
+                    width: 80%;
+                    height: 45px;
+                    line-height: 45px;
+                    border: 1px solid rgb(203, 203, 203);
+                    margin: 10px 0;
+                    padding-left: 10px;
+                }
+                label.error {
+                    color: red;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    padding-left: 50px;
+                }
+            }
+            .btnLogin {
+                float: none;
+                width: 80%;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                color: #FFFFFF;
+                border: solid 1px #cbcbcb;
+                display: block;
+                margin: 20px 0 50px 40px;
+                font-weight: bolder;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+        #fast {
+            border: 1px solid #ccc;
+            border-bottom: 1px dotted #ccc;
+            width: 100%;
+            text-align: center;
+            p {
+                width: 80%;
+                margin: 10px 40px;
+                input {
+                    height: 45px;
+                    line-height: 45px;
+                    border: 1px solid rgb(203, 203, 203);
+                    padding-left: 10px;
+                }
+                .phoneNum {
+                    width: 60%;
+                    float: left;
+                }
+                .phoneBtn {
+                    width: 35%;
+                    float: right;
+                    height: 45px;
+                    line-height: 45px;
+                }
+                .code_input {
+                    width: 35%;
+                    float: left;
+                }
+                #code {
+                    display: block;
+                    width: 35%;
+                    height: 45px;
+                    float: left;
+                    border: 1px solid #cbcbcb;
+                }
+                span {
+                    float: left;
+                    font-size: 12px;
+                }
+                .phoneCode {
+                    width: 100%;
+                }
+            }
+            .btnLogin {
+                float: none;
+                width: 80%;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                color: #FFFFFF;
+                border: solid 1px #cbcbcb;
+                display: block;
+                margin: 20px 0 50px 40px;
+                font-weight: bolder;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+        .move {
+            display: none;
+        }
+        .coop {
+            border: 1px solid #ccc;
+            border-top: 0;
+            padding: 10px 20px;
+            p {
+                font-size: 14px;
+                font-weight: bold;
+                color: #a2a2a2;
+                margin: 10px 0;
+                a {
+                    width: 33px;
+                    height: 33px;
+                    display: block;
+                    float: left;
+                    margin: 0 10px 0 0;
+                    background: url(../data/img/logos.jpg) no-repeat left center;
+                }
+            }
+            .qkimg a.weixin {
+                background-position: 0px 0px;
+            }
+            .qkimg a.xiaomi {
+                background-position: -147px 0px;
+            }
+            .qkimg a.zhifubao {
+                background-position: -48px 0px;
+            }
+            .qkimg a.qq {
+                background-position: -189px 0px;
+            }
+            .qkimg a.qihu360 {
+                background-position: -228px 0px;
+            }
+            .qkimg a.weibo {
+                background-position: -93px 0px;
+                width: 36px;
+            }
+        }
+    }
+}
+
+#bottom {
+    width: 1200px;
+    margin: 0 auto;
+    p {
+        text-align: center;
+        font-size: 12px;
+        color: #919191;
+        margin-bottom: 15px;
+    }
+    .subFooter {
+        text-align: center;
+        height: 50px;
+        a,
+        span {
+            margin: 0 15px;
+        }
+        // background-color: #b81e20;
+        .redLogo:link,
+        .redLogo:visited,
+        .redLogo:hover {
+            width: 113px;
+            height: 42px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat 0px -400px;
+        }
+        .costumeOrg {
+            width: 156px;
+            height: 45px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat 0px -448px;
+        }
+        .wsjyBzzx:link,
+        .wsjyBzzx:visited,
+        .wsjyBzzx:hover {
+            width: 96px;
+            height: 42px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat 0px -494px;
+        }
+        .vanclMsg:link,
+        .vanclMsg:visited,
+        .vanclMsg:hover {
+            width: 101px;
+            height: 42px;
+            display: inline-block;
+            background: url(../data/img/spritesbg.png) no-repeat -97px -494px;
+        }
+    }
+}
